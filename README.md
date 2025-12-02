@@ -1,0 +1,2 @@
+# hikref
+HIKvision references meaning
