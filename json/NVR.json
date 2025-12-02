@@ -36,62 +36,37 @@
       "map": {
         "I": "International"
       }
-    },
-	{
-      "name": "serie",
-      "length": 2,
-      "map": {
-        "-L": "Monitor NVR",
-		"-Q": "Q series",
-		"-K": "K series",
-		"-I": "I series",
-		"-P": "P series",
-		"-M": "M series or M-VRro series",
-		"-H": "super H series"
-      }
-	},
-    {
-      "name": "hdd_slots",
-      "length": "variable",
-      "map": {
-        "24": "24 HDD slot",
-        "16": "16 HDD slot",
-        "8": "8 HDD slot",
-		"4": "4 HDD slot",
-        "2": "2 HDD slot",
-        "1": "1 HDD slot"
-      }
-    },
-    {
-    "name": "option",
-    "length": "variable",
-	"map": {
-		"/4P": "with 4 channel PoE interfaces",
-		"/8P": "with 8 channel PoE interfaces",
-		"/16P": "with 16 channel PoE interfaces",
-		"/24P": "with 24 channel PoE interfaces",
-		"/X": "supports fusion intelligent functions, including facial recognition, perimeter protection, etc.",
-		"/AI": "Behavior Analysis & AIOP",
-		"/W": "with Wi-Fi module",
-		"/4G": "with 4G module",
-		"/M": "metal case (only for 71 series)",
-		"R": "Redundant power supplies",
-		"/R": "Redundant power supplies",
-		"/LCD": "with LCD screen",
-		"/S": "supports intelligent perimeter protection or facial recognition(for I series)",
-		"/VPro": "VPro"
-	  }
-	},
-    {
-      "name": "revision",
-      "length": 3,
-      "map": {
-        "": "default",
-        "(B)": "2nd revision",
-        "(C)": "3rd revision"
-      }
     }
   ],
   "options": {
+      "24": "24 HDD slot",
+      "16": "16 HDD slot",
+      "8": "8 HDD slot",
+      "4": "4 HDD slot",
+      "2": "2 HDD slot",
+      "1": "1 HDD slot",
+      "L": "Monitor NVR",
+      "Q": "Q series",
+      "K": "K series",
+      "I": "I series",
+      "P": "P series",
+      "M": "M series or M-VRro series",
+      "H": "super H series",
+      "/4P": "with 4 channel PoE interfaces",
+      "/8P": "with 8 channel PoE interfaces",
+      "/16P": "with 16 channel PoE interfaces",
+      "/24P": "with 24 channel PoE interfaces",
+      "/X": "supports fusion intelligent functions, including facial recognition, perimeter protection, etc.",
+      "/AI": "Behavior Analysis & AIOP",
+      "/W": "with Wi-Fi module",
+      "/4G": "with 4G module",
+      "/M": "metal case (only for 71 series)",
+      "R": "Redundant power supplies",
+      "/R": "Redundant power supplies",
+      "/LCD": "with LCD screen",
+      "/S": "supports intelligent perimeter protection or facial recognition(for I series)",
+      "/VPro": "VPro",
+      "(B)": "2nd revision",
+      "(C)": "3rd revision"
   }
 }
