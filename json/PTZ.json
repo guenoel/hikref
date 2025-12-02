@@ -1,0 +1,46 @@
+{
+  "description": "PTZ Camera (IP)",
+  "prefixes": [
+    "DS-2A",
+    "DS-2D",
+    "DS-2S"
+  ],
+  "structure": [
+    {
+      "name": "series",
+      "length": 1,
+      "map": {
+        "1": "1 series",
+        "2": "2 series",
+        "3": "3 series"
+      }
+    },
+    {
+      "name": "appearance",
+      "length": 1,
+      "map": {
+        "C": "Circular",
+        "H": "Irregular circular",
+        "X": "Multiple-Lens",
+        "W": "Default"
+      }
+    },
+    {
+      "name": "generation",
+      "length": 1,
+      "map": {}
+    },
+    {
+      "name": "version",
+      "length": 1,
+      "map": {}
+    }
+  ],
+  "options": {
+    "IR": "IR",
+    "C": "ColorVu",
+    "P": "Pigtail",
+    "K": "Variant K",
+    "/S": "Perimeter"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "description": "HiLook Kit",
+  "prefixes": [
+    "TK-"
+  ],
+  "structure": [
+    {
+      "name": "kit_series",
+      "length": "variable",
+      "map": {}
+    },
+    {
+      "name": "kit_variant",
+      "length": "variable",
+      "map": {}
+    }
+  ],
+  "options": {}
+}

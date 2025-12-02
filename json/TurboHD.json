@@ -1,0 +1,39 @@
+{
+  "description": "TurboHD Camera (analog)",
+  "prefixes": [
+    "DS-2CE"
+  ],
+  "structure": [
+    {
+      "name": "series",
+      "length": 2,
+      "map": {}
+    },
+    {
+      "name": "resolution_code",
+      "length": 2,
+      "map": {}
+    },
+    {
+      "name": "platform",
+      "length": 1,
+      "map": {}
+    },
+    {
+      "name": "version",
+      "length": 1,
+      "map": {
+        "0": "1st",
+        "1": "2nd",
+        "2": "3rd"
+      }
+    }
+  ],
+  "options": {
+    "S": "Smart/Perimeter",
+    "/FA": "Face recognition",
+    "/X": "Advanced Pro",
+    "/XT": "Advanced Pro + two-way audio",
+    "/P": "POC"
+  }
+}

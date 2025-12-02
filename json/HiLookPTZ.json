@@ -1,0 +1,23 @@
+{
+  "description": "HiLook PTZ Camera",
+  "prefixes": [
+    "PTZ-"
+  ],
+  "structure": [
+    {
+      "name": "series",
+      "length": 1,
+      "map": {}
+    },
+    {
+      "name": "appearance",
+      "length": 1,
+      "map": {}
+    }
+  ],
+  "options": {
+    "C": "ColorVu",
+    "H": "Darkfighter",
+    "X": "Powered by X"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "AC Router",
+  "prefixes": [
+    "DS-3WG"
+  ],
+  "structure": [
+    {
+      "name": "family",
+      "length": 3,
+      "map": {}
+    },
+    {
+      "name": "model",
+      "length": "variable",
+      "map": {}
+    }
+  ],
+  "options": {
+    "G": "Gigabit",
+    "S": "Standard",
+    "I": "Cloud managed",
+    "V": "Version"
+  }
+}

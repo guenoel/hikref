@@ -1,0 +1,28 @@
+{
+  "description": "TurboHD DVR",
+  "prefixes": [
+    "DS-72"
+  ],
+  "structure": [
+    {
+      "name": "series",
+      "length": 2,
+      "map": {}
+    },
+    {
+      "name": "channels",
+      "length": "variable",
+      "map": {}
+    },
+    {
+      "name": "platform",
+      "length": 1,
+      "map": {}
+    }
+  ],
+  "options": {
+    "/S": "Perimeter",
+    "/FA": "Face recognition",
+    "/X": "Advanced"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "description": "HiLook NVR",
+  "prefixes": [
+    "NVR-"
+  ],
+  "structure": [
+    {
+      "name": "series",
+      "length": "variable",
+      "map": {}
+    },
+    {
+      "name": "channels",
+      "length": "variable",
+      "map": {}
+    }
+  ],
+  "options": {
+    "/AI": "AI features",
+    "/W": "Wi-Fi"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "description": "Access Point Wifi",
+  "prefixes": [
+    "DS-3WAP"
+  ],
+  "structure": [
+    {
+      "name": "family",
+      "length": 4,
+      "map": {}
+    },
+    {
+      "name": "wireless_generation",
+      "length": 1,
+      "map": {
+        "6": "Wi-Fi 6",
+        "5": "Wi-Fi 5"
+      }
+    },
+    {
+      "name": "model_code",
+      "length": "variable",
+      "map": {}
+    }
+  ],
+  "options": {
+    "W": "Wi-Fi internal antenna",
+    "W1": "Wi-Fi external antenna",
+    "W2": "Wi-Fi enhanced antenna",
+    "/SL": "Strobe Light & Audio",
+    "4G": "4G support",
+    "5G": "5G support"
+  }
+}

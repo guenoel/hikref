@@ -1,0 +1,28 @@
+{
+  "description": "HiLook Network Camera",
+  "prefixes": [
+    "IPC-"
+  ],
+  "structure": [
+    {
+      "name": "series",
+      "length": 1,
+      "map": {}
+    },
+    {
+      "name": "type",
+      "length": 1,
+      "map": {}
+    },
+    {
+      "name": "model",
+      "length": "variable",
+      "map": {}
+    }
+  ],
+  "options": {
+    "I": "IR",
+    "C": "Color",
+    "W": "Wi-Fi"
+  }
+}

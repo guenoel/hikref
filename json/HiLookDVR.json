@@ -1,0 +1,22 @@
+{
+  "description": "HiLook DVR",
+  "prefixes": [
+    "DVR-"
+  ],
+  "structure": [
+    {
+      "name": "series",
+      "length": "variable",
+      "map": {}
+    },
+    {
+      "name": "channels",
+      "length": "variable",
+      "map": {}
+    }
+  ],
+  "options": {
+    "/S": "Smart",
+    "/X": "Advanced"
+  }
+}

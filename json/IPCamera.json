@@ -1,0 +1,142 @@
+{
+  "description": "IP Camera",
+  "prefixes": [
+    "DS-2CD",
+    "DS-2CV",
+    "DS-2XS"
+  ],
+  "structure": [
+    {
+      "name": "series",
+      "length": 1,
+      "map": {
+        "1": "1 Series",
+        "2": "2 Series",
+        "3": "3 Series",
+		"6": "6 Series - Caméras spécifiques",
+		"7": "Série 7 - Fonctions intelligentes",
+		"8": "Série 8 - Spécifique projets"
+      }
+    },
+    {
+      "name": "form_factor",
+      "length": 1,
+      "map": {
+        "0": "Fixed Bullet, Mini bullet ou box",
+        "1": "Fixed Dome, Dôme fixe / Dôme varifocale intérieur",
+        "3": "Fixed Turret, Tourelle fixe",
+        "4": "Cube",
+        "5": "Mini Dome, dôme varifocale extérieur",
+        "6": "Vari-focal Bullet",
+        "7": "Vari-focal Dome",
+        "T": "Big Fixed Bullet / Bullet IR puissant",
+        "8": "Box",
+        "9": "Fisheye / PaneVu 180°",
+        "A": "PT Vari-Focal Bullet / DeepinView",
+        "B": "Bullet",
+        "C": "Doorbell",
+        "D": "Pinhole(for ½ series) / Dome(for 3 series ) / Cachée / PaneVu multivues",
+        "E": "Recessed Mount Dome",
+        "F": "PT Dome",
+        "G": "Mini Bullet",
+        "H": "Vari-focal Turret",
+        "U": "Wi-Fi Cube",
+        "P": "PT Fixed Bullet",
+        "Q": "Wi-Fi PT Dome Camera"
+      }
+    },
+    {
+      "name": "resolution",
+      "length": 1,
+      "map": {
+        "0": "1 MP",
+        "1": "1.3 MP",
+        "2": "2 MP",
+        "3": "3 MP",
+        "4": "4 MP",
+        "5": "5 MP",
+        "6": "6 MP",
+        "8": "8 MP"
+      }
+    },
+    {
+      "name": "technology",
+      "length": 1,
+      "map": {
+        "0": "X0 series (H.264)",
+        "1": "X1 series (H.264/H.265)",
+        "2": "H.264",
+        "3": "X3 series",
+        "5": "X5 series",
+        "6": "X6 (AcuSense)",
+        "7": "X7 (ColorVu)",
+        "9": "Reserved",
+        "A": "Reserved",
+        "Z": "Reserved"
+      }
+    },
+    {
+      "name": "international_flag",
+      "length": 1,
+      "map": {
+        "G": "For international market"
+      }
+    },
+    {
+      "name": "hardware_version",
+      "length": 1,
+      "map": {
+        "0": "Première version",
+        "1": "Deuxième version",
+        "2": "Troisième version",
+		"2": "Quatrième version"
+      }
+    },
+    {
+      "name": "hardware_option",
+      "length": "variable",
+      "map": {
+		"E": "Economy",
+        "H": "Enhanced (Smart Hybrid Light)",
+		"P": "???",
+		"X": "Reserved",
+		"S": "Reserved"
+      }
+    }
+  ],
+  "options": {
+	"/": "separateur / detecté",
+    "P": "Panoramic",
+    "T": "Pigtail",
+    "2LI": "Dual Light 60m",
+    "4LI": "Dual Light 80m",
+    "2I": "2 IR LEDs",
+    "4I": "4 IR LEDs",
+    "LI": "Dual Light (IR+White)",
+    "I": "IR illumination",
+    "L": "White Light",
+    "N": "Invisible IR",
+    "Z": "Motorized Vari-focal Lens",
+    "S": "Interface (Audio/Alarm)",
+    "F": "SD card",
+    "U": "Built-in Mic",
+    "2U": "Built-in Dual-Array Mic",
+    "M": "HDMI (Metal pour serie 1)",
+    "D": "Non-PoE AC/DC",
+    "H": "Chauffage",
+    "Y": "Anti-Corrosion",
+    "K": "Minor variant",
+    "W1": "Wi-Fi external antenna",
+    "W2": "Wi-Fi enhanced antenna",
+    "W": "Wi-Fi internal antenna",
+    "SL": "Strobe Light & Audio Alarm",
+    "SRB": "Strobe Light Red/Blue",
+    "eF": "Eco-friendly packaging",
+    "**G-T": "Pre-install G storage (TLC)",
+    "**G-M": "Install G EMMC chip",
+    "4G": "Support 4G",
+    "5G": "Support 5G",
+    "Battery": "Battery pack",
+    "Solar Panel": "Solar Panel"
+  }
+}

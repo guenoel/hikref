@@ -1,0 +1,22 @@
+{
+  "description": "HiLook Analog Camera",
+  "prefixes": [
+    "THC-"
+  ],
+  "structure": [
+    {
+      "name": "series",
+      "length": 1,
+      "map": {}
+    },
+    {
+      "name": "channels",
+      "length": "variable",
+      "map": {}
+    }
+  ],
+  "options": {
+    "H": "HQH",
+    "M": "MD2.0"
+  }
+}

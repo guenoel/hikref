@@ -1,0 +1,40 @@
+{
+  "description": "Speaker",
+  "prefixes": [
+    "DS-QA"
+  ],
+  "structure": [
+    {
+      "name": "series",
+      "length": 2,
+      "map": {
+        "Z": "Z Series",
+        "E": "E Series"
+      }
+    },
+    {
+      "name": "appearance",
+      "length": 1,
+      "map": {
+        "1": "Wall Speaker",
+        "2": "Ceiling Speaker",
+        "3": "Horn Speaker",
+        "4": "Column Speaker",
+        "A": "Amplifier"
+      }
+    },
+    {
+      "name": "power",
+      "length": "variable",
+      "map": {}
+    }
+  ],
+  "options": {
+    "V": "Constant Voltage",
+    "R": "Constant Resistance",
+    "S": "Sub speaker",
+    "W": "Wi-Fi",
+    "B": "Bluetooth",
+    "E": "PoE"
+  }
+}

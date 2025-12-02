@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Hikvision Reference Decoder</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;background:#f4f4f4;padding:20px}
+.container{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+input{width:70%;padding:10px;font-size:16px}
+button{padding:10px 16px;font-size:16px}
+.result{margin-top:16px}
+.segment{background:#fafafa;padding:10px;border-left:4px solid #2196f3;margin-bottom:8px}
+.unknown{color:#c62828;font-weight:bold}
+.good{color:#2e7d32}
+</style>
+<script src="script/hikvision_parser.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Hikvision Reference Decoder</h1>
+<p>Entrez une référence (ex: DS-3WAP622G-SIV)</p>
+<input id="ref" placeholder="DS-3WAP622G-SIV" />
+<button id="run">Analyser</button>
+<div id="out" class="result"></div>
+</div>
+<script>
+document.getElementById('run').addEventListener('click', async ()=>{
+  const ref = document.getElementById('ref').value.trim();
+  if(!ref) return;
+  document.getElementById('out').innerHTML = '<p>Analyse en cours…</p>';
+  try{
+    const res = await analyzeReference(ref,'json/');
+    if(res.error){ document.getElementById('out').innerHTML = '<div class="segment unknown">'+res.error+'</div>'; return; }
+    let html = '<div class="segment"><b>Fichier catégorie :</b> '+res.categoryFile+'</div>';
+    html += '<div class="segment"><b>Préfixe :</b> '+res.prefix+'</div>';
+    html += '<h3>Segments</h3>';
+    res.parsed.segments.forEach(s=>{
+      html += '<div class="segment"><b>'+s.name+'</b> → <span class="'+(s.meaning==='Unknown'?'unknown':'good')+'">'+s.code+'</span><br>Signification: '+s.meaning+'</div>';
+    });
+    html += '<h3>Options</h3>';
+    if(res.parsed.options.length===0) html += '<div class="segment">Aucune option détectée</div>';
+    else res.parsed.options.forEach(o=>{ html += '<div class="segment"><b>'+o.code+'</b> → '+o.meaning+'</div>'; });
+    if(res.parsed.leftover && res.parsed.leftover.length>0) html += '<h3>Restant non traité</h3><div class="segment unknown">'+res.parsed.leftover+'</div>';
+    document.getElementById('out').innerHTML = html;
+  }catch(e){
+    document.getElementById('out').innerHTML = '<div class="segment unknown">Erreur: '+e.message+'</div>';
+    console.error(e);
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "description": "TurboHD PTZ Camera",
+  "prefixes": [
+    "DS-2AE"
+  ],
+  "structure": [
+    {
+      "name": "model",
+      "length": 2,
+      "map": {}
+    },
+    {
+      "name": "features",
+      "length": 2,
+      "map": {}
+    }
+  ],
+  "options": {
+    "/S": "Smart/Perimeter",
+    "/FA": "Face recognition"
+  }
+}

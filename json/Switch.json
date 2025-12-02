@@ -1,0 +1,59 @@
+{
+  "description": "Switch",
+  "prefixes": [
+    "DS-3E",
+    "DS-3T"
+  ],
+  "structure": [
+    {
+      "name": "family",
+      "length": 2,
+      "map": {}
+    },
+    {
+      "name": "management",
+      "length": 1,
+      "map": {
+        "0": "Unmanaged",
+        "1": "Managed",
+        "2": "Full managed",
+        "3": "Layer 3"
+      }
+    },
+    {
+      "name": "port_profile",
+      "length": 1,
+      "map": {
+        "1": "All 100M",
+        "3": "100M/1000M mixed",
+        "5": "All Gigabit",
+        "7": "Gigabit/10G mixed"
+      }
+    },
+    {
+      "name": "port_count",
+      "length": "variable",
+      "map": {}
+    },
+    {
+      "name": "poe",
+      "length": "variable",
+      "map": {
+        "HP": "Hi-PoE",
+        "P": "802.3at"
+      }
+    },
+    {
+      "name": "version",
+      "length": 1,
+      "map": {}
+    }
+  ],
+  "options": {
+    "N/A": "Non-PoE",
+    "TF": "Optical/electrical mixed",
+    "F": "All optical",
+    "D": "Plastic desktop",
+    "HS": "Harsh environment"
+  }
+}
